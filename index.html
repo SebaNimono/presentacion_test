@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinPay Portal · Demo Presentación</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      margin: 0;
+      padding: 2.5rem;
+    }
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 1.75rem;
+    }
+    h1 { margin-top: 0; font-size: 1.4rem; }
+    input, button {
+      padding: 0.6rem 0.9rem;
+      border-radius: 8px;
+      border: 1px solid #475569;
+      background: #0f172a;
+      color: #fff;
+    }
+    button {
+      background: #2563eb;
+      border-color: #2563eb;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>FinPay · Buscador de Clientes y Transacciones</h1>
+    <p>Ingresa el nombre del cliente o filtro de factura para consultar en la base de datos:</p>
+    <div>
+      <input id="searchInput" type="text" placeholder="Ej. cliente o expresión..." />
+      <button onclick="runCustomerSearch()">Buscar</button>
+    </div>
+    <div id="resultsBox" style="margin-top: 1.2rem;"></div>
+  </div>
+  <script src="./src/portal.js"></script>
+</body>
+</html>
